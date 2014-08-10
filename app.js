@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/login', function(req, res) {
-
+    res.render('login');
 });
 
 app.post('/login', function(req, res) {
@@ -27,7 +27,7 @@ app.post('/login', function(req, res) {
 });
 
 app.get('/answer', function(req, res) {
-
+    res.json({});
 });
 
 app.post('/answer', function(req, res) {

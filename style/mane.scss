@@ -24,7 +24,10 @@ footer {
 	span {
 		text-align: center;
 		&:first-child {
-			margin-top: 20px;
+			margin-top: 10px;
+		}
+		&:last-child {
+			margin-bottom: 10px;
 		}
 	}
 }
