@@ -1,6 +1,6 @@
 var QuestionService = function QuestionService($http, $q) {
-    var QuestionService = {};
-    QuestionService.getQuestions = function getQuestions() {
+    var QuestionServiceHost = {};
+    QuestionServiceHost.getQuestions = function getQuestions() {
         var deferred = $q.defer();
         $http
             .get('/questions')
@@ -9,8 +9,8 @@ var QuestionService = function QuestionService($http, $q) {
             });
         return deferred.promise;
     };
-    return QuestionService;
-}
+    return QuestionServiceHost;
+};
 
 angular
     .module('family-feud')

@@ -6,7 +6,7 @@ var GameCtrl = function GameCtrl(QuestionService) {
         .then(function(questions) {
             vm.questions = questions;
             vm.currentQuestion = questions[0];
-        })
+        });
 
     this.currentQuestion = {};
     this.setCurrentQuestion = function setCurrentQuestion(idx) {
