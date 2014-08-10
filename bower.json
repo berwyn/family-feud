@@ -1,0 +1,22 @@
+{
+  "name": "family-feud",
+  "version": "0.1.0",
+  "authors": [
+    "berwyn <berwyn.codeweaver@gmail.com>"
+  ],
+  "description": "Family Feud!",
+  "main": "app.js",
+  "license": "Apache v2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0"
+  }
+}

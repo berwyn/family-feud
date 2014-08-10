@@ -1,0 +1,16 @@
+{
+  "name": "family-feud",
+  "version": "0.1.0",
+  "description": "Family Feud as an Express application",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "berwyn",
+  "license": "Apache v2",
+  "dependencies": {
+    "express": "^4.8.2",
+    "jade": "^1.5.0",
+    "node-sass": "^0.9.3"
+  }
+}

@@ -1,0 +1,30 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	flex-shrink: 1;
+	text-align: center;
+}
+
+.main-content {
+	flex-grow: 8;
+}
+
+footer {
+	flex-shrink: 1;
+	background: #e8e8e8;
+	span {
+		text-align: center;
+		&:first-child {
+			margin-top: 20px;
+		}
+	}
+}
