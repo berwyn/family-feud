@@ -13,6 +13,7 @@ app.use(sass.middleware({
 }));
 app.use(express.static('public'));
 app.use(express.static('bower_components'));
+app.use(express.static('js'));
 
 app.get('/', function(req, res) {
     res.render('index');
@@ -32,6 +33,22 @@ app.get('/answer', function(req, res) {
 
 app.post('/answer', function(req, res) {
 
+});
+
+app.get('/questions', function(req, res) {
+    res.json({
+        questions: [
+            {
+                text: 'Who is best pony?',
+                answers: [
+                    {text: 'Luna', value: 200},
+                    {text: 'Rainbow Dash', value: 200},
+                    {text: 'Applejack', value: 200},
+                    {text: 'Thunderlane', value: 200}
+                ]
+            }
+        ]
+    });
 });
 
 var server = app.listen(port, function() {
