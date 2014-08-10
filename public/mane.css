@@ -1,1 +1,0 @@
-html,body{width:100%;height:100%;}body{display:flex;flex-direction:column;}header{flex-shrink:1;text-align:center;}.main-content{flex-grow:8;}footer{flex-shrink:1;background:#e8e8e8;}footer span{text-align:center;}footer span:first-child{margin-top:10px;}footer span:last-child{margin-bottom:10px;}
