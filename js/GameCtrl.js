@@ -2,15 +2,16 @@ var GameCtrl = function GameCtrl(QuestionService) {
 
     var vm = this;
 
-    QuestionService.getQuestions()
+    QuestionService
+        .getQuestions()
         .then(function(questions) {
             vm.questions = questions;
             vm.currentQuestion = questions[0];
         });
 
-    this.currentQuestion = {};
-    this.setCurrentQuestion = function setCurrentQuestion(idx) {
-        this.currentQuestion = questions[idx];
+    vm.currentQuestion = {};
+    vm.setCurrentQuestion = function setCurrentQuestion(idx) {
+        vm.currentQuestion = vm.questions[idx];
     };
 
 };

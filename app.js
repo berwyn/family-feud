@@ -46,6 +46,15 @@ app.get('/questions', function(req, res) {
                     {text: 'Applejack', value: 200},
                     {text: 'Thunderlane', value: 200}
                 ]
+            },
+            {
+                text: 'Best ship?',
+                answers: [
+                    {text: 'Appledash', value: 200},
+                    {text: 'Fluttermac', value: 200},
+                    {text: 'Rarity + Tom', value: 200},
+                    {text: 'Twi Selfcest', value: 200}
+                ]
             }
         ]
     });

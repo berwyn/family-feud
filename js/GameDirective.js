@@ -1,6 +1,6 @@
 function GameDirective() {
     return {
-        restrict: 'EA',
+        restrict: 'E',
         template: [
             '<div class="game row">',
                 '<div class="question">',
